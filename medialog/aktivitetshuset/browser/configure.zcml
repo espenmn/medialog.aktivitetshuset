@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plone">
+
+  <include package="plone.app.contentmenu" />
+ 
+
+  <browser:page
+      name="week_summary_view"
+      permission="zope2.View"
+      for="plone.app.collection.interfaces.ICollection"
+      template="templates/week_summary_view.pt"
+      />
+
+ 
+
+</configure>

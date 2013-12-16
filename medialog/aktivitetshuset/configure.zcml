@@ -10,6 +10,7 @@
    <five:registerPackage package="." initialize=".initialize" />
    <include package="archetypes.schemaextender" /> 
    <include file="profiles.zcml" />
+   <include package=".browser" />
 
         
     <adapter name="Aktivitets.Extender" 

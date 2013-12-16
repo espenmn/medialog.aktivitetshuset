@@ -34,7 +34,7 @@ def DayVocabulary(context):
             SimpleTerm('thursday', 'thursday', u'Torsdag'),
             SimpleTerm('friday', 'friday', u'Fredag'),
             SimpleTerm('saturday', 'saturday', u'Lordag'),
-            SimpleTerm('sundat', 'sunday', u'Sondag'),
+            SimpleTerm('sunday', 'sunday', u'Sondag'),
         ])  
       
     return SimpleVocabulary(terms)
