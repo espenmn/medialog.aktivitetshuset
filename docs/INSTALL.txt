@@ -1,0 +1,12 @@
+Installation
+==========================
+
+ 
+ * Add ``medialog.aktivitetshuset`` to the list of eggs to install, e.g.:
+ 
+    [buildout]
+    ...
+    eggs =
+        ...
+        medialog.aktivitetshuset
+        

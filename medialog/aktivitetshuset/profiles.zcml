@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="medialog.aktivitetshuset">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Medialog Aktivietshuset"
+      directory="profiles/default"
+      description="Adds fields to newsitem"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+</configure>
