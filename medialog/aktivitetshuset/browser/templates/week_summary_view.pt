@@ -15,7 +15,14 @@
     <metal:block use-macro="context/standard_view/macros/entries">
     <metal:entry fill-slot="entry">
 	  <span tal:define="days  python:list(['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'])" tal:repeat="day days">
-	   <h1 tal:content="day" />
+	    <h1 tal:condition="python:day=='monday'">Mandag</h1>
+		<h1 tal:condition="python:day=='tuesday'">Tirsdag</h1>
+  		<h1 tal:condition="python:day=='wednesday'">Onsdag</h1>
+		<h1 tal:condition="python:day=='thursday'">Torsdag</h1>
+		<h1 tal:condition="python:day=='friday'">Fredag</h1>
+		<h1 tal:condition="python:day=='saturday'">Lørdag</h1>
+	   	<h1 tal:condition="python:day=='sunday'">Søndag</h1>
+
         <div class="tileItem visualIEFloatFix"
              tal:define="obj item/getObject"
              tal:condition="python: day in item.day">
@@ -36,7 +43,8 @@
                    tal:attributes="href python:item_type in use_view_action and item_url+'/view' or item_url;"
                    tal:content="item/Title">
                     Item Title
-                </a>
+                </a> 
+                 <span tal:content="item/time" />
             </h2>
 
             <div metal:use-macro="context/standard_view/macros/document_byline"></div>
