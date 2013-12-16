@@ -14,7 +14,7 @@
     <metal:entries fill-slot="entries">
     <metal:block use-macro="context/standard_view/macros/entries">
     <metal:entry fill-slot="entry">
-	  <span tal:define="days  python:list(['mandag', 'tirsdag', 'onsdag', 'torsdag', 'fredag', 'lørdag', 'søndag'])" tal:repeat="day days">
+	  <span tal:define="days  python:list(['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'])" tal:repeat="day days">
 	   <h1 tal:content="day" />
         <div class="tileItem visualIEFloatFix"
              tal:define="obj item/getObject"
